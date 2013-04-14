@@ -4,8 +4,8 @@
 		{assign var='nameTitle' value=$gBitUser->mInfo.login}
 		{bitmodule notra=1 title="Welcome $nameTitle" name="login_box"}
 			<ul>
-				<li><a href="{$smarty.const.USERS_PKG_URL}my.php">{biticon iname="go-home" iexplain="My bitweaver"} {tr}My bitweaver{/tr}</a></li>
-				<li><a href="{$smarty.const.WIKI_PKG_URL}edit.php">{biticon iname="document-new" iexplain="Create New Documentation"} {tr}Create New Documentation{/tr}</a></li>
+				<li><a href="{$smarty.const.USERS_PKG_URL}my.php">{booticon iname="icon-home" iexplain="My bitweaver"} {tr}My bitweaver{/tr}</a></li>
+				<li><a href="{$smarty.const.WIKI_PKG_URL}edit.php">{booticon iname="icon-file" iexplain="Create New Documentation"} {tr}Create New Documentation{/tr}</a></li>
 				<li><a href="{$smarty.const.BLOGS_PKG_URL}post.php">{biticon iname="mail-message-new" iexplain="Write Blog Post"} {tr}Write Blog Post{/tr}</a></li>
 				{if $gBitUser->isAdmin()}
 					<li><a href="{$smarty.const.KERNEL_PKG_URL}admin/">{biticon iname="preferences-system" iexplain="Administration"} {tr}Administration{/tr}</a></li>
